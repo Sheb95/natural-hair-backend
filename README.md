@@ -1,1 +1,1 @@
-# natural-hair-backend
+#Natural Hair API
