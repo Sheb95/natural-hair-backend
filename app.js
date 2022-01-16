@@ -44,6 +44,11 @@ app.patch("/hairstyles/:id", function (req, res) {
 });
 
 //delete hairstyle by id
+app.delete("/hairstyles/:id", function (req, res) {
+   // get id
+   // call function that deletes hairstyle and returns the deleted hairstyle
+   //res.json ({success: true, payload: deletedItem})
+});
 
 app.listen(port, () => {
    console.log(`App listening at http://localhost:${port}`);
