@@ -1,29 +1,27 @@
 import naturalHairstyles from "../hairstyles-data.js";
 
+export function getNaturalHairstyles() {
+   return naturalHairstyles;
+}
+
 export function deleteHairstyleById(requestedId) {
    let hairstyles = naturalHairstyles;
-   console.log(hairstyles);
    const index = hairstyles.findIndex(function ({ id }) {
       return id === requestedId;
    });
 
    if (typeof index === "number" && index != -1) {
-      console.log("here is the selected hairstyle ", hairstyles[index]);
-      hairstyles.splice(index, 1);
-      console.log("here are the hairstyles: ", hairstyles);
-      return hairstyles[index];
+      const deletedHairstyle = hairstyles.splice(index, 1);
+      return deletedHairstyle;
    } else {
       return console.log("Hairstyle does not exist");
    }
-
-   //match requested id with id of hairstyle
-   //if there is a match
-   //find that hairstyle in the array
-   //delete that hairstyle
-   //return deleted hairstyle to user
 }
 
-deleteHairstyleById(7);
+export function createNewHairstyle(newHairstyle) {
+   naturalHairstyles.push(newHairstyle);
+   return naturalHairstyles[naturalHairstyles.length - 1];
+}
 
 export function updateHairstyleById(requestedId, updates) {
    let hairstyles = naturalHairstyles;
@@ -32,8 +30,6 @@ export function updateHairstyleById(requestedId, updates) {
    const index = hairstyles.findIndex(function ({ id }) {
       return id === requestedId;
    });
-
-   console.log("Array index of requested hairstyle", index);
 
    if (typeof index === "number" && index != -1) {
       let updatedHairstyle = hairstyles[index];
@@ -57,5 +53,3 @@ export function updateHairstyleById(requestedId, updates) {
       return console.log("Hairstyle not in database");
    }
 }
-
-// updateHairstyleById(1, { difficulty: "medium" });
