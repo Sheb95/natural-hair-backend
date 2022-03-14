@@ -23,7 +23,7 @@
         "validateOnSynth": false,
         "assumeRoleArn": "arn:${AWS::Partition}:iam::${AWS::AccountId}:role/cdk-hnb659fds-deploy-role-${AWS::AccountId}-${AWS::Region}",
         "cloudFormationExecutionRoleArn": "arn:${AWS::Partition}:iam::${AWS::AccountId}:role/cdk-hnb659fds-cfn-exec-role-${AWS::AccountId}-${AWS::Region}",
-        "stackTemplateAssetObjectUrl": "s3://cdk-hnb659fds-assets-${AWS::AccountId}-${AWS::Region}/bb560b74144efad71b8cde21af49d6f48bd14834a01a42db8f06885967143d0f.json",
+        "stackTemplateAssetObjectUrl": "s3://cdk-hnb659fds-assets-${AWS::AccountId}-${AWS::Region}/cf030401f2d5f335b74e92c8734e632fc9684c9debb08851c83beb2fee96d1ac.json",
         "requiresBootstrapStackVersion": 6,
         "bootstrapStackVersionSsmParameter": "/cdk-bootstrap/hnb659fds/version",
         "additionalDependencies": [
@@ -39,16 +39,94 @@
         "CdkStack.assets"
       ],
       "metadata": {
-        "/CdkStack/YikesHandler/ServiceRole/Resource": [
+        "/CdkStack/APIHandler/ServiceRole/Resource": [
           {
             "type": "aws:cdk:logicalId",
-            "data": "YikesHandlerServiceRoleCE50C3FC"
+            "data": "APIHandlerServiceRole41BB65E0"
           }
         ],
-        "/CdkStack/YikesHandler/Resource": [
+        "/CdkStack/APIHandler/Resource": [
           {
             "type": "aws:cdk:logicalId",
-            "data": "YikesHandler2780F971"
+            "data": "APIHandler68F11976"
+          }
+        ],
+        "/CdkStack/Endpoint/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "EndpointEEF1FD8F"
+          }
+        ],
+        "/CdkStack/Endpoint/CloudWatchRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "EndpointCloudWatchRoleC3C64E0F"
+          }
+        ],
+        "/CdkStack/Endpoint/Account": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "EndpointAccountB8304247"
+          }
+        ],
+        "/CdkStack/Endpoint/Deployment/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "EndpointDeployment318525DA74a5860fc7b87408ae226bb89aa60f2d"
+          }
+        ],
+        "/CdkStack/Endpoint/DeploymentStage.prod/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "EndpointDeploymentStageprodB78BEEA0"
+          }
+        ],
+        "/CdkStack/Endpoint/Endpoint": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Endpoint8024A810"
+          }
+        ],
+        "/CdkStack/Endpoint/Default/{proxy+}/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Endpointproxy39E2174E"
+          }
+        ],
+        "/CdkStack/Endpoint/Default/{proxy+}/ANY/ApiPermission.CdkStackEndpointD2AFD49B.ANY..{proxy+}": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "EndpointproxyANYApiPermissionCdkStackEndpointD2AFD49BANYproxyC080954A"
+          }
+        ],
+        "/CdkStack/Endpoint/Default/{proxy+}/ANY/ApiPermission.Test.CdkStackEndpointD2AFD49B.ANY..{proxy+}": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "EndpointproxyANYApiPermissionTestCdkStackEndpointD2AFD49BANYproxy5071DF11"
+          }
+        ],
+        "/CdkStack/Endpoint/Default/{proxy+}/ANY/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "EndpointproxyANYC09721C5"
+          }
+        ],
+        "/CdkStack/Endpoint/Default/ANY/ApiPermission.CdkStackEndpointD2AFD49B.ANY..": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "EndpointANYApiPermissionCdkStackEndpointD2AFD49BANY323D717C"
+          }
+        ],
+        "/CdkStack/Endpoint/Default/ANY/ApiPermission.Test.CdkStackEndpointD2AFD49B.ANY..": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "EndpointANYApiPermissionTestCdkStackEndpointD2AFD49BANY278DBB1E"
+          }
+        ],
+        "/CdkStack/Endpoint/Default/ANY/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "EndpointANY485C938B"
           }
         ],
         "/CdkStack/CDKMetadata/Default": [

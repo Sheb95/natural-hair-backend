@@ -1,5 +1,6 @@
 const { Stack, Duration } = require("aws-cdk-lib");
 const lambda = require("aws-cdk-lib/aws-lambda");
+const apigw = require("aws-cdk-lib/aws-apigateway");
 // const sqs = require('aws-cdk-lib/aws-sqs');
 
 class CdkStack extends Stack {
@@ -20,11 +21,16 @@ class CdkStack extends Stack {
       // });
 
       //created infrastructure for my lambda function :D
-      const yikes = new lambda.Function(this, "YikesHandler", {
-         functionName: "myFirstLambda",
+      const api = new lambda.Function(this, "APIHandler", {
+         functionName: "APILambda",
          runtime: lambda.Runtime.NODEJS_14_X,
+         //dir where lambda lives  --> wrapped up in zip file and sent to AWS
+         //define configs such as mb
          code: lambda.Code.fromAsset("lambda"),
-         handler: "yikes.handler",
+         handler: "index.handler",
+      });
+      new apigw.LambdaRestApi(this, "Endpoint", {
+         handler: api,
       });
    }
 }
