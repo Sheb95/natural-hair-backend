@@ -1,7 +1,12 @@
 #Natural Hair API
+##Context
+This project started as a way to practice creating a server with express with multiple routes. However, once I had completed the first iteration of this, I decided to deploy this to AWS using AWS CDK and Lambda. 
 
-#Session 1
-It took me over an HOUR! to install all the packages required for this project. I did install express-generator to start with. However, I forgot what the folders are meant to do and decided to start off with having all the routes in one file.
+I choose to use AWS CDK to get my first taste of infrastructure as code (IaC). Through AWS CDK, I defined the configuration of my Lambda function which was then used to deploy my REST API. 
 
--  created a get request to request all hairstyles
--  created a database
+I thought that my simple application would be an interesting way to become acquainted with this as well as AWS's microservices. 
+
+1st iteration: Express server with CRUD routes running on the computer [DONE]
+2nd iteration: Express server deployed on AWS using Lambda and AWS CDK [DONE]
+3rd iteration: migrate data from data.js to PostgreSQL (AWS RDS) [IN PROGRESS] 
+
