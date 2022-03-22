@@ -16,7 +16,7 @@ AWS url: https://tss5wkf2x0.execute-api.eu-west-1.amazonaws.com/prod/
 ### Endpoints
 <code> GET https://tss5wkf2x0.execute-api.eu-west-1.amazonaws.com/prod/hairstyles </code>
 - Returns an list of all hairstyles
-<code> GET https://tss5wkf2x0.execute-api.eu-west-1.amazonaws.com/prod/hairstyles/{id}</code>
+> <code> GET https://tss5wkf2x0.execute-api.eu-west-1.amazonaws.com/prod/hairstyles/{id}</code>
 - Returns hairstyle with the id defined in the params (i.e. hairstyles/1)
 
 ### Data Schema 
