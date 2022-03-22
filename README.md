@@ -6,9 +6,9 @@ I choose to use AWS CDK to get my first taste of infrastructure as code (IaC). T
 
 I thought that my simple application would be an interesting way to become acquainted with this as well as AWS's microservices. 
 
-1st iteration: Express server with CRUD routes running on the computer [DONE]
-2nd iteration: Express server deployed on AWS using Lambda and AWS CDK [DONE]
-3rd iteration: migrate data from data.js to PostgreSQL (AWS RDS) [IN PROGRESS] 
+- 1st iteration: Express server with CRUD routes running on the computer [DONE]
+- 2nd iteration: Express server deployed on AWS using Lambda and AWS CDK [DONE]
+- 3rd iteration: migrate data from data.js to PostgreSQL (AWS RDS) [IN PROGRESS] 
 
 ## How to get me up at running:
 All responses are returned in plain text format
@@ -16,6 +16,8 @@ AWS url: https://tss5wkf2x0.execute-api.eu-west-1.amazonaws.com/prod/
 ### Endpoints
 <code> GET https://tss5wkf2x0.execute-api.eu-west-1.amazonaws.com/prod/hairstyles </code>
 - Returns an list of all hairstyles
+<code> GET https://tss5wkf2x0.execute-api.eu-west-1.amazonaws.com/prod/hairstyles/{id}</code>
+- Returns hairstyle with the id defined in the params (i.e. hairstyles/1)
 
 ### Data Schema 
 | Key         | Type        | Description                         |
