@@ -22,3 +22,6 @@ AWS url: https://tss5wkf2x0.execute-api.eu-west-1.amazonaws.com/prod/
 | ----------- | ----------- | ----------------------------------  |
 | id          | int         | The id of the hair style.           |
 | hairstyle   | string      | The title of the hairstyle.         |
+| image       | string      | The URL of the image.               |
+| difficulty  | string      | Describes the diffculty of style    |
+| url         | string      | A tutorial URL that redirects users to YouTube.        |
